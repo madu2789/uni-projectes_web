@@ -1,0 +1,157 @@
+/* @group RESET */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, input {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+a:active {
+    outline: none;
+}
+
+a:focus {
+    -moz-outline-style: none;
+}
+
+/* @end RESET */
+
+/* @group GENERAL TAG DEFINITIONS */
+body {
+    font: 12px Verdana, sans-serif;
+    color: #333333;
+    background: #FFFFFF;
+}
+
+h1 {
+    font: bold 32px "Trebuchet Ms", Arial, sans-serif;
+    color: #1F1F1F;
+    line-height: 40px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+h1 strong, h1 a:hover strong {
+    color: #1fa4e1;
+    text-decoration: none;
+}
+
+h1 em {
+    color: #539B32;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+    text-decoration: none;
+}
+
+select {
+    font: 11px Verdana, sans-serif;
+}
+
+a {
+    color: #CC3333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+*:first-child+html {
+    overflow-x: hidden;
+}
+
+/* @end GENERAL TAG DEFINITIONS */
+
+/* @group HELPERS */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* @end HELPERS */
+
+/* @group MAIN CONTAINERS */
+#content, #header_contents, #footer_contents {
+    margin: 0pt auto;
+    margin-bottom: 30px;
+    position: relative;
+    width: 980px;
+}
+
+/* @end MAIN CONTAINERS */
+
+/* @group MESSAGES */
+.warning {
+    border: 1px solid #EADAAF;
+    margin: 5px 0 5px 0;
+    padding: 15px 0 15px 35px;
+    background: #FEFBE4 url(../imag/error.gif) no-repeat 10px 14px;
+    height: 100%;
+    font-weight: bold;
+}
+
+.error {
+    border: 1px solid #EADAAF;
+    margin: 5px 0 5px 0;
+    padding: 0px 0 15px 35px;
+    background: #fcefe5 url(../imag/error.gif) no-repeat 10px 14px;
+    height: 100%;
+}
+
+/* @end MESSAGES */
